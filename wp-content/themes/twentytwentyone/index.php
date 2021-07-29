@@ -14,6 +14,7 @@
  * @since Twenty Twenty-One 1.0
  */
 get_template_part('jaime/jaime_calendar');
+get_template_part('ajax/jaime_ajax');
 get_header(); ?>
 
 <?php if ( is_home() && ! is_front_page() && ! empty( single_post_title( '', false ) ) ) : ?>
@@ -21,6 +22,11 @@ get_header(); ?>
 		<h1 class="page-title"><?php single_post_title(); ?></h1>
 	</header><!-- .page-header -->
 <?php endif; ?>
+<p style="text-align: center;"><b>在输入框中输入一个姓名:</b></p>
+<form style="text-align: center;"> 
+姓名: <input type="text" onkeyup="showHint(this.value)">
+</form>
+<p style="text-align: center;">返回值: <span id="txtHint"></span></p>
 <div class="wrapper">
     <!-- xxxx年xx月を表示 -->
     <h1 id="header"></h1>

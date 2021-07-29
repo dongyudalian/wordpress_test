@@ -669,8 +669,13 @@ function templateRedirect() {
 }
 function templateRedirect2() {
 	$basename = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']);
-	loadCustomTemplate(TEMPLATEPATH.'/jaime/'."/$basename");
+	loadCustomTemplate(TEMPLATEPATH.'/jaime'."/$basename");
+}
+function templateRedirect3() {
+	$basename = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']);
+	loadCustomTemplate(TEMPLATEPATH.'/ajax'."/$basename");
 }
 
 add_action('template_redirect', 'templateRedirect');
 add_action('template_redirect', 'templateRedirect2');
+add_action('template_redirect', 'templateRedirect3');

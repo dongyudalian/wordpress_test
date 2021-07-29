@@ -22,11 +22,11 @@ get_header(); ?>
 		<h1 class="page-title"><?php single_post_title(); ?></h1>
 	</header><!-- .page-header -->
 <?php endif; ?>
-<p style="text-align: center;"><b>在输入框中输入一个姓名:</b></p>
+<p style="text-align: center;"><b>Input a test name:</b></p>
 <form style="text-align: center;"> 
-姓名: <input type="text" onkeyup="showHint(this.value)">
+name: <input type="text" onkeyup="showHint(this.value)">
 </form>
-<p style="text-align: center;">返回值: <span id="txtHint"></span></p>
+<p style="text-align: center;">return: <span id="txtHint"></span></p>
 <div class="wrapper">
     <!-- xxxx年xx月を表示 -->
     <h1 id="header"></h1>

@@ -84,7 +84,7 @@ function wpb_hook_javascript() {
 		.wrapper{
 			max-width: 600px;
 			margin: 0 auto;
-			color: #666;
+			color: #000000;
 		}
 		#header {
 			text-align: center;

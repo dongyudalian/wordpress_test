@@ -23,15 +23,15 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
-<p style="text-align: center;"><b>Input a test name:</b></p>
-<form style="text-align: center;"> 
-name: <input type="text" onkeyup="showHint(this.value)">
+<p style="text-align: center; margin-top:-80px"><b>Input a test name:</b></p>
+<form style="text-align: center; margin-top:-80px"> 
+<input type="text" onkeyup="showHint(this.value)">
 </form>
-<p style="text-align: center;">return: <span id="txtHint"></span></p>
+<p style="text-align: center; margin-top:-60px" id="txtHint">return: </p>
 
 <?php 
 if ( have_posts() ) {
-	echo '  <form style="text-align: center;">
+	echo '  <form style="text-align: center; margin-top:-60px">
 					<select name="users" onchange="showSite(this.value)">
 					<option value="">select a post:</option>
 			';
@@ -51,7 +51,7 @@ if ( have_posts() ) {
 
 <div class="wrapper">
 	
-	<div id="txtHint_sql" style="text-align: center;"><b>Show your post……</b></div>
+	<div id="txtHint_sql" style="text-align: center; margin-top:-60px"><b>Show your post……</b></div><br>
     <!-- xxxx年xx月を表示 -->
     <h1 id="header"></h1>
     <!-- ボタンクリックで月移動 -->

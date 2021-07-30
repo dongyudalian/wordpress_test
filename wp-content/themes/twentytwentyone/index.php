@@ -22,12 +22,36 @@ get_header(); ?>
 		<h1 class="page-title"><?php single_post_title(); ?></h1>
 	</header><!-- .page-header -->
 <?php endif; ?>
+
 <p style="text-align: center;"><b>Input a test name:</b></p>
 <form style="text-align: center;"> 
 name: <input type="text" onkeyup="showHint(this.value)">
 </form>
 <p style="text-align: center;">return: <span id="txtHint"></span></p>
+
+<?php 
+if ( have_posts() ) {
+	echo '  <form style="text-align: center;">
+					<select name="users" onchange="showSite(this.value)">
+					<option value="">select a post:</option>
+			';
+
+	while ( have_posts() ) {
+		the_post();
+		echo '
+			<option value="'.get_the_id().'">'.get_the_title().'</option>
+		';
+	}
+	echo '
+		</select>
+		</form>
+	';
+}
+?>
+
 <div class="wrapper">
+	
+	<div id="txtHint_sql" style="text-align: center;"><b>Show your post……</b></div>
     <!-- xxxx年xx月を表示 -->
     <h1 id="header"></h1>
     <!-- ボタンクリックで月移動 -->

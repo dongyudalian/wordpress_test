@@ -154,6 +154,10 @@ function wpb_hook_javascript() {
 		#next {
 			float: right;
 		}
+
+		td.sql_id {
+			color: black;
+		}
 	</style>
 <?php
 }

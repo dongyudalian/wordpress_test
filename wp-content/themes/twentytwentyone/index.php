@@ -27,13 +27,13 @@ get_header(); ?>
 <form style="text-align: center; margin-top:-80px"> 
 <input type="text" onkeyup="showHint(this.value)">
 </form>
-<p style="text-align: center; margin-top:-60px" id="txtHint">return: </p>
+<p style="text-align: center; margin-top:-60px" id="txtHint"><b>return: </b></p>
 
 <?php 
 if ( have_posts() ) {
 	echo '  <form style="text-align: center; margin-top:-60px">
 					<select name="users" onchange="showSite(this.value)">
-					<option value="">select a post:</option>
+					<option value="">select a post</option>
 			';
 
 	while ( have_posts() ) {
@@ -51,7 +51,7 @@ if ( have_posts() ) {
 
 <div class="wrapper">
 	
-	<div id="txtHint_sql" style="text-align: center; margin-top:-60px"><b>Show your post……</b></div><br>
+	<div id="txtHint_sql" style="text-align: center; margin-top:-60px"><b>Show your post: </b></div><br>
     <!-- xxxx年xx月を表示 -->
     <h1 id="header"></h1>
     <!-- ボタンクリックで月移動 -->

@@ -23,7 +23,7 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
-<p style="text-align: center; margin-top:-80px"><b>Input a test name:</b></p>
+<p style="text-align: center; margin-top:-135px"><b>Input a test name:</b></p>
 <form style="text-align: center; margin-top:-80px"> 
 <input type="text" onkeyup="showHint(this.value)">
 </form>

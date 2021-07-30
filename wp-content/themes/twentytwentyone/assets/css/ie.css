@@ -5392,6 +5392,7 @@ table.wp-calendar-table caption {
 }
 
 .site-branding:last-child {
+	margin-top: -210px;
 	margin-right: 0;
 	width: 100%;
 	text-align: center;
@@ -5456,9 +5457,8 @@ table.wp-calendar-table caption {
 
 .site-header > .site-logo {
 	width: 100%;
-	padding-bottom: 45px;
-	border-bottom: 1px solid;
-	text-align: center;
+	text-align: right;
+	margin-top: -55px;
 }
 
 .site-logo .custom-logo {
@@ -5473,6 +5473,7 @@ table.wp-calendar-table caption {
 @media only screen and (min-width: 482px) {
 
 	.site-logo .custom-logo {
+		margin-right: -50px;
 		max-width: 300px;
 		max-height: 100px;
 		height: auto;
